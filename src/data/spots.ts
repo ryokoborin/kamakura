@@ -29,8 +29,7 @@ export const spots: Spot[] = [
     lng: 139.5558,
     openingHours: "5:00〜21:00（4〜9月は5:30〜）",
     admission: "無料（宝物殿は別途）",
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/tsurugaoka.jpeg",
     nearbySpotIds: ["komachi", "hokokuji"],
   },
   {
