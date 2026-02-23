@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-main-blue: #264653;
+    --color-main-matcha: #6B7F5E;
+    --color-accent-vermillion: #C1440E;
+    --color-accent-gold: #C9A94E;
+    --color-base-paper: #F5F0E8;
+    --color-base-ink: #2C2C2C;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-base-paper text-base-ink antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
