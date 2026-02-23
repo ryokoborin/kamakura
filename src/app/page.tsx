@@ -48,7 +48,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative h-[50vh] min-h-[300px] max-h-[500px]">
         <Image
-          src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1920&q=80"
+          src="/photo/tsurugaoka.jpg"
           alt="鎌倉の風景"
           fill
           className="object-cover"
