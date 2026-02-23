@@ -1,23 +1,8 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-
-const notoSans = Noto_Sans_JP({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-noto-sans",
-  display: "swap",
-});
-
-const notoSerif = Noto_Serif_JP({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-noto-serif",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "鎌倉観光ガイド | 今、空いている鎌倉を見つけよう",
@@ -36,7 +21,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${notoSans.variable} ${notoSerif.variable}`}>
+    <html lang="ja">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        {/* App Router のルートレイアウトで全ページに適用されるため、no-page-custom-font は無効化 */}
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="font-sans min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>

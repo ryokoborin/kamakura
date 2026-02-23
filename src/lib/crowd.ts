@@ -29,10 +29,10 @@ export function getCurrentCrowdLevel(
 
   const dayPattern = crowdData.weeklyPattern[d];
   if (!dayPattern) {
-    return crowdData.weeklyPattern[0]?.[h] ?? 2;
+    return (crowdData.weeklyPattern[0]?.[h] ?? 2) as CrowdLevel;
   }
 
-  let level = dayPattern[h] ?? dayPattern[Math.floor(h / 2) * 2] ?? 2;
+  let level: CrowdLevel = (dayPattern[h] ?? dayPattern[Math.floor(h / 2) * 2] ?? 2) as CrowdLevel;
 
   const modifier = getSeasonalModifier();
   if (modifier > 0 && crowdData.seasonalModifier) {
@@ -43,7 +43,7 @@ export function getCurrentCrowdLevel(
       crowdData.seasonalModifier.new_year ??
       0;
     if (seasonal > 0) {
-      level = Math.min(4, (level + 1) as CrowdLevel);
+      level = Math.min(4, level + 1) as CrowdLevel;
     }
   }
 

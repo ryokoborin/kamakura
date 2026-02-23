@@ -7,7 +7,7 @@ import { spots } from "@/data/spots";
 import { getCrowdData } from "@/data/crowd-data";
 import { getCurrentCrowdLevel } from "@/lib/crowd";
 import { CROWD_COLORS, CROWD_LABELS } from "@/types/crowd";
-import { CATEGORY_LABELS } from "@/types/spot";
+import type { CrowdLevel } from "@/types/crowd";
 import type { SpotCategory } from "@/types/spot";
 
 const MapComponent = dynamic(() => import("@/components/map/CrowdMap"), {
@@ -48,9 +48,9 @@ export default function MapPage() {
   const mapSpots = useMemo(() => {
     return filteredSpots.map((spot) => {
       const crowdData = getCrowdData(spot.id);
-      const level = crowdData
+      const level: CrowdLevel = crowdData
         ? getCurrentCrowdLevel(crowdData, selectedHour)
-        : 2;
+        : (2 as CrowdLevel);
       return { ...spot, crowdLevel: level };
     });
   }, [filteredSpots, selectedHour]);
