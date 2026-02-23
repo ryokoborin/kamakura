@@ -7,12 +7,14 @@ import { Footer } from "@/components/layout/Footer";
 
 const notoSans = Noto_Sans_JP({
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
   variable: "--font-noto-sans",
   display: "swap",
 });
 
 const notoSerif = Noto_Serif_JP({
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
   variable: "--font-noto-serif",
   display: "swap",
 });
