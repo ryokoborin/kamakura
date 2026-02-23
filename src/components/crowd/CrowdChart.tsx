@@ -51,15 +51,16 @@ export function CrowdChart({ data, className = "" }: CrowdChartProps) {
           <Tooltip
             content={({ active, payload }) => {
               if (active && payload?.[0]) {
-                const d = payload[0].payload;
+                const d = payload[0].payload as ChartDataPoint & { name: string };
+                const level = d.level as CrowdLevel;
                 return (
                   <div className="bg-white px-3 py-2 rounded-lg shadow-lg border border-base-ink/10">
                     <p className="font-medium">{d.name}</p>
                     <p
                       className="text-sm"
-                      style={{ color: CROWD_COLORS[d.level] }}
+                      style={{ color: CROWD_COLORS[level] }}
                     >
-                      {CROWD_LABELS[d.level]}
+                      {CROWD_LABELS[level]}
                     </p>
                   </div>
                 );
