@@ -29,7 +29,7 @@ export const spots: Spot[] = [
     lng: 139.5558,
     openingHours: "5:00〜21:00（4〜9月は5:30〜）",
     admission: "無料（宝物殿は別途）",
-    imageUrl: "/photo/tsurugaoka.jpeg",
+    imageUrl: "/photo/tsurugaoka.jpg",
     nearbySpotIds: ["komachi", "hokokuji"],
   },
   {
@@ -42,8 +42,7 @@ export const spots: Spot[] = [
     address: "神奈川県鎌倉市小町",
     lat: 35.3185,
     lng: 139.5512,
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/komachi.jpg",
     nearbySpotIds: ["tsurugaoka"],
   },
   {
@@ -57,8 +56,7 @@ export const spots: Spot[] = [
     lng: 139.5572,
     openingHours: "9:00〜16:00",
     admission: "300円",
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/hokokuji.jpg",
     nearbySpotIds: ["tsurugaoka"],
   },
   {
@@ -73,8 +71,7 @@ export const spots: Spot[] = [
     lng: 139.5362,
     openingHours: "8:00〜17:30",
     admission: "300円",
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/daibutsu.jpg",
     nearbySpotIds: ["hasedera"],
   },
   {
@@ -89,8 +86,7 @@ export const spots: Spot[] = [
     lng: 139.5335,
     openingHours: "8:00〜17:00",
     admission: "400円",
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/hasedera.jpg",
     nearbySpotIds: ["daibutsu"],
   },
   {
@@ -104,8 +100,7 @@ export const spots: Spot[] = [
     lng: 139.5362,
     openingHours: "8:00〜17:30",
     admission: "300円（胎内+20円）",
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/kotokuin.jpg",
     nearbySpotIds: ["hasedera"],
   },
   {
@@ -120,8 +115,7 @@ export const spots: Spot[] = [
     lng: 139.5485,
     openingHours: "8:00〜16:30",
     admission: "500円",
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/engakuji.jpg",
     nearbySpotIds: ["kenchoji", "meigetsuin"],
   },
   {
@@ -135,8 +129,7 @@ export const spots: Spot[] = [
     lng: 139.5552,
     openingHours: "8:30〜16:30",
     admission: "500円",
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/kenchoji.jpg",
     nearbySpotIds: ["engakuji"],
   },
   {
@@ -150,8 +143,7 @@ export const spots: Spot[] = [
     lng: 139.5465,
     openingHours: "9:00〜16:00",
     admission: "500円",
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/meigetsuin.jpg",
     nearbySpotIds: ["engakuji"],
   },
   {
@@ -164,8 +156,7 @@ export const spots: Spot[] = [
     address: "神奈川県鎌倉市由比ヶ浜",
     lat: 35.3075,
     lng: 139.545,
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/yuigahama.jpg",
     nearbySpotIds: ["zaimokuza"],
   },
   {
@@ -177,8 +168,7 @@ export const spots: Spot[] = [
     address: "神奈川県鎌倉市材木座",
     lat: 35.305,
     lng: 139.555,
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/zaimokuza.jpg",
     nearbySpotIds: ["yuigahama"],
   },
   {
@@ -190,8 +180,7 @@ export const spots: Spot[] = [
     address: "神奈川県鎌倉市稲村ヶ崎",
     lat: 35.2985,
     lng: 139.5385,
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/inamuragasaki.jpg",
     nearbySpotIds: ["yuigahama"],
   },
   {
@@ -204,8 +193,7 @@ export const spots: Spot[] = [
     address: "神奈川県藤沢市江の島",
     lat: 35.3005,
     lng: 139.4808,
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/enoshima.jpg",
     nearbySpotIds: ["shichirigahama"],
   },
   {
@@ -217,8 +205,7 @@ export const spots: Spot[] = [
     address: "神奈川県鎌倉市七里ヶ浜",
     lat: 35.3065,
     lng: 139.5085,
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/shichirigahama.jpg",
     nearbySpotIds: ["enoshima", "kamurayama"],
   },
   {
@@ -230,8 +217,7 @@ export const spots: Spot[] = [
     address: "神奈川県鎌倉市鎌倉山",
     lat: 35.3025,
     lng: 139.495,
-    imageUrl:
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    imageUrl: "/photo/kamurayama.jpg",
     nearbySpotIds: ["shichirigahama"],
   },
 ];
